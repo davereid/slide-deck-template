@@ -13,6 +13,7 @@ var SLIDE_CONFIG = {
       'Open Sans:regular,semibold,italic,italicsemibold',
       'Inconsolata'
     ],
+    timeLimit: '45:00'
     //theme: ['mytheme'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
   },
 
