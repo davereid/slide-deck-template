@@ -18,12 +18,12 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Firstname Lastname',
-    company: 'Job Title, Google',
-    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
+    name: 'Dave Reid',
+    company: 'Senior Engineer, Palantir.net',
+    //gplus: 'http://plus.google.com/1234567890',
+    twitter: '@davereid',
+    www: 'http://www.davereid.net'
+    //github: 'http://github.com/davereid'
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',
