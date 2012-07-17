@@ -315,8 +315,12 @@ SlideDeck.prototype.loadConfig_ = function(config) {
   }
 
   if (settings.title) {
-    document.title = settings.title.replace(/<br\/?>/, ' ') + ' - Google IO 2012';
+    document.title = settings.title.replace(/<br\/?>/, ' ');
     document.querySelector('[data-config-title]').innerHTML = settings.title;
+  }
+  
+  if (settings.event) {
+    document.title += ' - ' + settings.event;
   }
 
   if (settings.subtitle) {
