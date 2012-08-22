@@ -33,13 +33,29 @@ URL: https://code.google.com/p/io-2012-slides
   </slide>
 
   <slide class="title-slide segue nobackground">
-    <aside class="gdbar"><img src="images/palantir-dot-128.png"></aside>
+    <aside class="gdbar"><img src="images/mwds.png"></aside>
     <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup class="auto-fadein">
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
+      <p data-config-session><!-- populated from slide_config.json --></p>
     </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>About me</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Senior Engineer at <a href="http://www.palantir.net/">Palantir.net</a></li>
+        <li>Maintain almost 2% of contrib modules (Pathauto, Media, Redirect, etc.)</li>
+        <li>Core subsystem maintainer</li>
+        <li>Nebraska football fan</li>
+        <li>Two adorable cats</li>
+        <li>Baby on the way this October</li>
+    </article>
   </slide>
 
   <slide>
@@ -107,16 +123,11 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
     <article>
       <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
-      <pre class="prettyprint" data-lang="javascript">
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    <b>for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }</b>
-  }
-&lt;/script&gt;
+      <pre class="prettyprint" data-lang="php">
+// This is a test of PHP code.
+function testPHP(/Drupal/entity $argument = NULL) {
+  <b>return $argument->isPHP();</b>
+}
 </pre>
     </article>
   </slide>
@@ -333,7 +344,7 @@ function helloWorld(world) {
   </slide>
 
   <slide class="segue dark nobackground">
-    <aside class="gdbar"><img src="images/palantir-dot-128.png"></aside>
+    <aside class="gdbar"><img src="images/mwds.png"></aside>
     <hgroup class="auto-fadein">
       <h2>Segue Slide</h2>
       <h3>Subtitle Placeholder</h3>
@@ -348,7 +359,7 @@ function helloWorld(world) {
   </slide>
 
   <slide class="segue dark quote nobackground">
-    <aside class="gdbar right bottom"><img src="images/palantir-dot-128.png"></aside>
+    <aside class="gdbar right bottom"><img src="images/mwds.png"></aside>
     <article class="flexbox vleft auto-fadein">
       <q>
         This is an example of quote text.
@@ -376,10 +387,10 @@ function helloWorld(world) {
   </slide>
 
   <slide class="thank-you-slide segue nobackground">
-    <aside class="gdbar right"><img src="images/palantir-dot-128.png"></aside>
+    <aside class="gdbar right"><img src="images/mwds.png"></aside>
     <article class="flexbox vleft auto-fadein">
-      <h2>&lt;Thank You!&gt;</h2>
-      <p>Important contact information goes here.</p>
+      <h2>Thank You! Questions?</h2>
+      <p class="auto-fadein" data-config-session-summary>Important contact information goes here.</p>
     </article>
     <p class="auto-fadein" data-config-contact>
       <!-- populated from slide_config.json -->

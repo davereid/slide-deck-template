@@ -319,12 +319,19 @@ SlideDeck.prototype.loadConfig_ = function(config) {
     document.querySelector('[data-config-title]').innerHTML = settings.title;
   }
   
-  if (settings.event) {
+  if (settings.eventName) {
     document.title += ' - ' + settings.event;
+    document.querySelector('[data-config-session]').innerHTML = settings.eventName;
   }
 
   if (settings.subtitle) {
     document.querySelector('[data-config-subtitle]').innerHTML = settings.subtitle;
+  }
+
+  if (settings.sessionURL) {
+    var linkedURL = settings.sessionShortURL || settings.sessionURL;
+    document.querySelector('[data-config-session]').innerHTML += '<br /><a href="' + linkedURL + '" title="Link to session and slides.">' + settings.sessionURL + '</a>';
+    document.querySelector('[data-config-session-summary]').innerHTML = '<a href="' + linkedURL + '" title="Link to session and slides.">' + settings.sessionURL + '</a>';
   }
 
   if (this.config_.presenters) {
@@ -337,20 +344,22 @@ SlideDeck.prototype.loadConfig_ = function(config) {
 
       html = [p.name, p.company].join('<br>');
 
-      var gplus = p.gplus ? '<span>g+</span><a href="' + p.gplus +
-          '">' + p.gplus.replace(/https?:\/\//, '') + '</a>' : '';
+      html2 = [];
 
-      var twitter = p.twitter ? '<span>twitter</span>' +
-          '<a href="http://twitter.com/' + p.twitter + '">' +
-          p.twitter + '</a>' : '';
+      if (p.links) {
+        for (var name in p.links) {
+          var link = p.links[name];
+          if (link.match(/^https?:\/\//)) {
+            link = '<a href="' + link + '">' + link.replace(/https?:\/\//, '') + '</a>';
+          }
+          else if (name === 'twitter') {
+            link = '<a href="https://twitter.com/' + link + '">@' + link + '</a>';
+          }
+          html2.push('<span>' + name + '</span>' + link);
+        }
+      }
 
-      var www = p.www ? '<span>www</span><a href="' + p.www +
-                        '">' + p.www.replace(/https?:\/\//, '') + '</a>' : '';
-
-      var github = p.github ? '<span>github</span><a href="' + p.github +
-          '">' + p.github.replace(/https?:\/\//, '') + '</a>' : '';
-
-      var html2 = [gplus, twitter, www, github].join('<br>');
+      html2 = html2.join('<br>');
 
       if (dataConfigContact) {
         dataConfigContact.innerHTML = html2;

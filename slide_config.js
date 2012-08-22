@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Title Goes Here<br>Up To Two Lines',
-    subtitle: 'Subtitle Goes Here',
+    title: 'Drupal Media',
+    subtitle: '',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
@@ -14,7 +14,9 @@ var SLIDE_CONFIG = {
       'Inconsolata'
     ],
     timeLimit: '45:00',
-    event: 'Event name'
+    eventName: 'Midwest Drupal Developer Summit 2012',
+    sessionURL: 'http://midwest-developer-summit.com/node/136',
+    sessionShortURL: 'http://goo.gl/Mwl9w'
     //theme: ['mytheme'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
   },
 
@@ -22,10 +24,14 @@ var SLIDE_CONFIG = {
   presenters: [{
     name: 'Dave Reid',
     company: 'Senior Engineer, Palantir.net',
-    //gplus: 'http://plus.google.com/1234567890',
-    twitter: '@davereid',
-    www: 'http://www.davereid.net'
-    //github: 'http://github.com/davereid'
+    links: {
+      drupal: 'https://drupal.org/user/53892',
+      irc: 'davereid',
+      //gplus: 'http://plus.google.com/1234567890',
+      twitter: 'davereid',
+      www: 'http://www.davereid.net'
+      //github: 'https://github.com/davereid'
+    }
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',
