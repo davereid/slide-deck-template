@@ -2,10 +2,10 @@
 @import "compass/css3/columns";
 @import "compass/css3/user-interface";
 
-$social-tags: '#mwds';
+$social-tags: '#drupalcon @DrupalMedia';
 $brand-small-icon-size: 30px;
 $event-image: '';
-$event-image-small: '../../images/mwds.png';
+$event-image-small: '../../images/drupalcon-munich.png';
 
 $gray-1: #e6e6e6;
 $gray-2: #a9a9a9;
@@ -980,7 +980,7 @@ aside.gdbar {
       display: none !important;
     }
   }
-  
+
   slides {
     slide {
       &.backdrop {

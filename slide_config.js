@@ -1,7 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Drupal Media',
+    title: 'D8 File Management Initiative',
     subtitle: '',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
@@ -14,9 +14,9 @@ var SLIDE_CONFIG = {
       'Inconsolata'
     ],
     timeLimit: '45:00',
-    eventName: 'Midwest Drupal Developer Summit 2012',
-    sessionURL: 'http://midwest-developer-summit.com/node/136',
-    sessionShortURL: 'http://goo.gl/Mwl9w'
+    eventName: 'DrupalCon Munich 2012',
+    sessionURL: 'http://munich2012.drupal.org/content/improved-file-management-core',
+    sessionShortURL: 'http://lb.cm/2012-munich-fmi'
     //theme: ['mytheme'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
   },
 
@@ -41,4 +41,3 @@ var SLIDE_CONFIG = {
     github: 'http://github.com/you'
   }*/]
 };
-
